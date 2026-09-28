@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Users, Moon, ArrowRight, ShieldCheck, Leaf, HeartHandshake } from "lucide-react";
 import Oak from "../../public/oak-meadows-large.png";
 import SmallOak from '../../public/oak-meadows-cabin.png';
@@ -57,6 +57,10 @@ const CABINS = [
 ];
 
 const Cabins = () => {
+  useEffect(() => {
+    document.title = "Farm Cabins - Stay at Drew's Berries, Grants Pass";
+  }, []);
+
   return (
     <div className="bg-[#fdfcf9] min-h-screen animate-in fade-in duration-1000 pb-32 font-sans selection:bg-[#4B5320]/10 overflow-x-hidden">
 

@@ -6,6 +6,8 @@ import Contact from "../pages/Contact";
 import Cabins from "../pages/Cabins";
 import Offerings from "../pages/Offerings";
 import Membership from "../pages/Membership";
+import Harvest from "../pages/Harvest";
+import Wholesale from "../pages/Wholesale";
 
 
 export const router = createBrowserRouter([
@@ -18,6 +20,8 @@ export const router = createBrowserRouter([
       { path: "/cabins", element: <Cabins /> },
       { path: "/offerings", element: <Offerings /> },
       { path: "/membership", element: <Membership/> },
+      { path: "/harvest", element: <Harvest /> },
+      { path: "/wholesale", element: <Wholesale /> },
     ],
   },
 ]);

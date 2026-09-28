@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    document.title = "About Us - Drew's Berries in Grants Pass, Oregon";
+  }, []);
+
   return (
     <div className="bg-[#fdfcf9] min-h-screen pb-24 font-sans text-stone-800">
       <div className="relative pt-10 pb-20 px-6 text-center overflow-hidden">

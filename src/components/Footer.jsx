@@ -31,7 +31,7 @@ function Footer() {
             </p>
             <p className="mt-4 text-xs text-white">
               Operated by the Drusus Foundation, a Private Membership
-              Association and Agricultural Ministry.
+              Association and Agricultural Ministry located in Grants Pass, Southern Oregon.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ function Footer() {
                   About
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/membership"
                   onClick={handleScrollToTop}
@@ -66,14 +66,23 @@ function Footer() {
                 >
                   Membership
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
-                  to="/offerings"
+                  to="/harvest"
                   onClick={handleScrollToTop}
                   className="hover:text-white transition-colors"
                 >
-                  Offerings
+                  This Week's Harvest
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/wholesale"
+                  onClick={handleScrollToTop}
+                  className="hover:text-white transition-colors"
+                >
+                  Wholesale
                 </Link>
               </li>
               <li>

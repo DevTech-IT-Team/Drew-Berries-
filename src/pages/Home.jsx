@@ -4,6 +4,10 @@ import { X } from "lucide-react"; // Optional: Install lucide-react or use a cus
 import logo from "../../public/popup.png"; // Adjust this path to where your logo file is saved
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Drew's Berries - Fresh Farm Produce in Grants Pass, Oregon";
+  }, []);
+
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -108,7 +112,7 @@ const Home = () => {
 
             <p className="text-lg md:text-xl text-stone-300/90 mb-12 leading-relaxed font-sans font-normal max-w-xl">
               We are a community-focused ministry stewardship association based
-              in the rural heart of Oregon, dedicated to land and community.
+              in Grants Pass, Southern Oregon, dedicated to land and community.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -116,13 +120,13 @@ const Home = () => {
                 to="/membership"
                 className="bg-[#4B5320] text-white px-10 py-4 rounded-[10px] font-sans font-bold uppercase tracking-widest hover:bg-[#3d441a] transition-all text-center shadow-2xl active:scale-95 border border-[#4B5320]"
               >
-                Apply for Participation
+                Join Our Farm
               </Link>
               <Link
-                to="/offerings"
+                to="/harvest"
                 className="border-2 border-white/30 text-white backdrop-blur-md px-10 py-4 rounded-[10px] font-sans font-bold uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all text-center"
               >
-                View Our Offerings
+                View This Week's Harvest
               </Link>
             </div>
 
@@ -278,10 +282,10 @@ const Home = () => {
 
               <div className="flex flex-col items-center gap-4">
                 <Link
-                  to="/offerings"
+                  to="/harvest"
                   className="bg-[#4B5320] text-white px-12 py-5 rounded-[14px] font-sans font-bold uppercase tracking-widest hover:bg-[#5a632a] transition-all shadow-xl active:scale-95 text-center border border-[#6a7430]"
                 >
-                  Enter the Member Pantry
+                  Request Produce
                 </Link>
                 <span className="text-stone-400 text-xs font-serif italic tracking-widest">
                   Members Only Portal

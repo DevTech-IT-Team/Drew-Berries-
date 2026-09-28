@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Leaf,
   Info,
@@ -105,6 +105,10 @@ const OFFERINGS = [
 const CATEGORIES = ["All", "Produce", "Pantry", "Education"];
 
 const Offerings = () => {
+  useEffect(() => {
+    document.title = "Farm Offerings - Drew's Berries Private Harvest";
+  }, []);
+
   const [filter, setFilter] = useState("All");
 
   const filteredOfferings =
@@ -263,7 +267,7 @@ const Offerings = () => {
                     {item.description}
                   </p>
                   <button className="w-full bg-[#4B5320] text-white py-5 rounded-2xl font-black uppercase tracking-[0.3em] text-[11px] shadow-lg shadow-[#4B5320]/10 hover:bg-stone-900 transition-all flex items-center justify-center gap-3 group/btn">
-                    Request Participation
+                    Request Produce
                     <ArrowRight
                       size={16}
                       className="group-hover/btn:translate-x-1 transition-transform"

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { ShieldCheck, HeartHandshake, Leaf, Coins, ArrowRight, Info } from 'lucide-react';
 
 function Membership() {
+  useEffect(() => {
+    document.title = "Farm Membership - Join Drew's Berries Association";
+  }, []);
+
   return (
     <div className="bg-[#FDFBF7] min-h-screen animate-in fade-in duration-1000 pb-24 font-sans selection:bg-[#4B5320]/10">
       

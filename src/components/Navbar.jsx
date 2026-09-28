@@ -41,8 +41,10 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Membership", path: "/membership" },
-    { name: "Offerings", path: "/offerings" },
+    // { name: "Membership", path: "/membership" },
+    // { name: "Offerings", path: "/offerings" },
+    { name: "This Week's Harvest", path: "/harvest" },
+    { name: "Wholesale", path: "/wholesale" },
     { name: "Cabins", path: "/cabins" },
     { name: "Contact", path: "/contact" },
   ];
@@ -92,7 +94,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-stone-600 p-2 hover:bg-[#4B5320]/5 rounded-xl transition-colors"
+              className="text-stone-600 p-3 hover:bg-[#4B5320]/5 rounded-xl transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
